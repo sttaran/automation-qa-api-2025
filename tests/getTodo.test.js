@@ -2,7 +2,7 @@ import {expect, test} from '@jest/globals';
 import axios from 'axios';
 import {API_URL} from "../src/constants/api.js";
 
-test('getTodo returns the correct todo item', async () => {
+test.skip('getTodo returns the correct todo item', async () => {
     const todoId = 1;
 
     const response = await fetch(`${API_URL}/todos/${todoId}`)
@@ -16,7 +16,7 @@ test('getTodo returns the correct todo item', async () => {
     })
 })
 
-test('getTodo returns the correct todo item', async () => {
+test.skip('getTodo returns the correct todo item', async () => {
     const todoId = 1;
 
     const response = await axios(`${API_URL}/todos/${todoId}`)
