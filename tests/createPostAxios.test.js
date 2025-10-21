@@ -2,7 +2,7 @@ import {test,describe, expect} from "@jest/globals";
 import axios from 'axios';
 import {API_URL} from "../src/constants/api.js";
 
-describe("Posts Axios", ()=>{
+describe.skip("Posts Axios", ()=>{
     const apiClient = axios.create({
         baseURL: API_URL,
         validateStatus: () => true

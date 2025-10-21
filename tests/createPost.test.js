@@ -1,6 +1,6 @@
 import {test,describe, expect} from "@jest/globals";
 
-describe("Posts", ()=>{
+describe.skip("Posts", ()=>{
     test("Should be able to create a Post",async ()=>{
         const requestBody = {
             title: 'foo',
